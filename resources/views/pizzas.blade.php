@@ -8,7 +8,7 @@
                 Pizza List
             </div>
 
-            <p>{{$name}} - {{$age}}</p>
+            {{--<p>{{$name}} - {{$age}}</p>--}}
 
             {{--@for ($i = 0; $i < 5; $i++)
                 <p>the value of is {{$i}}</p>
