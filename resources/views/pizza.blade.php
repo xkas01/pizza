@@ -68,8 +68,27 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Laravel
+            Pizza List
         </div>
+        <p>{{$type}} - {{$base}} - {{$price}}</p>
+
+        @if ($price > 15)
+            <p>this pizza is expensive</p>
+        @elseif ($price < 5)
+            <p>this pizza is cheep</p>
+        @else
+            <p>this is pizza is normally priced</p>
+        @endif
+
+        @unless ($base == 'cheesy crust')
+            <p>you don't have a cheesy crust</p>
+        @endunless
+
+        @php
+            $name='shaun';
+            echo ($name);
+        @endphp
+
     </div>
 
 </div>
