@@ -21,6 +21,11 @@ Route::post('/pizzas', 'PizzaController@store');
 Route::get('/pizzas/{id}', 'PizzaController@show')->middleware('auth');
 Route::delete('/pizzas/{id}', 'PizzaController@destroy')->middleware('auth');
 
+// Disabling registration
+/*Auth::routes([
+    'register' => false
+]);*/
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
